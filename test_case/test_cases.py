@@ -36,11 +36,10 @@ class TestCase(unittest.TestCase):
         self.sp = SearchPage(self.driver, SearchPage.url)
 
     def tearDown(self) -> None:
-
         self.sp.quit_browser()
 
 
-    # # 登录
+    # # 登录模块
     # @data(*test_data)
     # @unpack
     # def test_1_login(self, **test_data):
@@ -49,13 +48,11 @@ class TestCase(unittest.TestCase):
     #     vercode = test_data['vercode']
     #     self.lp.login(username, password, vercode)
     #     sleep(5)
-    #     self.assertEqual(self.get_username(), test_data["veridate"], msg="登录失败")
+    #     self.assertEqual(self.lp.get_username(), test_data["veridate"], msg="登录失败")
     #     self.logger.log().info("第{0}个用例,参数username:{1},password:{2},vercode:{3}".format(TestCase.index, username, password, vercode))
     #     TestCase.index+=1
 
-
-
-    #搜索
+    #搜索模块
     @file_data('data.yaml')
     def test_2_search(self, **kwargs):
         searchtext = kwargs['search']["text"]
