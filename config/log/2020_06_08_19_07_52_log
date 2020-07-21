@@ -1,3 +1,0 @@
-2020/060819:07:52 test_cases.py INFO 第1个用例,参数username:13800138006,password:123456,vercode:4567
-2020/060819:08:19 test_cases.py INFO 第2个用例,参数username:13800138006,password:123456,vercode:1234
-2020/060819:08:45 test_cases.py INFO 第3个用例,参数username:13800138006,password:123456,vercode:6789

@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 
-from common import ivercode,ivercode2
+from common.common import ivercode,ivercode2
 # from PIL import Image
 # import pytesseract
 # import requests
@@ -31,7 +31,7 @@ class LoginPage(BasePage):
     def click_loginbt(self):
         self.loc(self.loginbt).click()
 
-    def get_username(self):
+    def assert_text(self):
         return self.loc(self.get_uname).text
 
     def login(self, username, password,vercode):
@@ -45,6 +45,8 @@ class LoginPage(BasePage):
         self.input_vercode(vercode)
         sleep(2)
         self.click_loginbt()
+        sleep(3)
+
 
 
 

@@ -19,7 +19,7 @@ class SearchPage(BasePage):
     def click_searchbt(self):
         self.loc(self.searchbt).click()
 
-    def get_search_text(self):
+    def assert_text(self):
         return self.loc(self.searchtext).text
 
     def search_shop(self,searchtext):
